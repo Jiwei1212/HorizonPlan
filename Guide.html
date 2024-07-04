@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Website.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Guide</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #17202b;
+            height: 3500px;
+        }
+
+        h4 {
+            font-style: Monospace;
+
+        }
+
+
+        body {
+            height: 1000px;
+            overflow-x: hidden;
+        }
+
+        .nav-link :hover {
+            color: #dc143c;
+            /*border-bottom: 2px solid darkred;*/
+        }
+
+
+        footer {
+            background-color: #111;
+            margin-top: 100px;
+        }
+
+        .footerContainer {
+            top: 100%;
+            width: 100%;
+            padding: 50px
+        }
+
+
+        .footerNav {
+            margin: 50px 0;
+        }
+
+        .footerNav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footerNav ul li {
+            color: white;
+            margin: 40px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        .footerNav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        .footerNav ul li a:hover {
+            opacity: 1;
+        }
+
+        .footerBottom {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footerBottom p {
+            color: white;
+        }
+
+        .designer {
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+
+
+        .navbar {
+            background-color: #212529 !important;
+        }
+
+
+        .content {
+            position: absolute;
+            height: 450px;
+            width: 2000px;
+            background-color: white;
+
+        }
+
+        h1 {
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-family: Mono;
+        }
+
+        .left {
+            height: 200px;
+            width: 500px;
+            margin-top: 500px;
+            background-color: transparent;
+            margin-left: 300px;
+
+        }
+
+        .image1 {
+            height: 70%;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 200px;
+        }
+
+        .image2 {
+            width: 100%;
+            margin-bottom: 200px;
+        }
+
+        .image3 {
+            width: 100%;
+            margin-bottom: 200px;
+        }
+
+        .image4 {
+            width: 100%;
+            margin-bottom: 200px;
+        }
+
+        .image5 {
+            width: 100%;
+        }
+
+        .right {
+            position: absolute;
+            height: 200px;
+            width: 500px;
+            margin-top: 500px;
+            background-color: white;
+            top: 0;
+            left: 55%;
+            color: black;
+            border-radius: 5px;
+            box-shadow: 0 0 50px white;
+        }
+
+        h3 {
+            color: grey;
+        }
+
+        .firstbox {
+            word-spacing: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            margin-bottom: 270px;
+            background-color: transparent;
+            padding: 5px;
+
+        }
+
+        .secondbox {
+            margin-bottom: 300px;
+            word-spacing: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 50px white;
+        }
+
+        .thirdbox {
+            margin-bottom: 160px;
+            word-spacing: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 50px white;
+        }
+
+        .fourthbox {
+            margin-bottom: 280px;
+            word-spacing: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 50px white;
+        }
+
+        .fifthbox {
+            word-spacing: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 50px white;
+        }
+
+        .Summary {
+            margin-top: 2300px;
+            margin-bottom: 100px;
+            height: 300px;
+            width: 70%;
+            background-color: #373c4f;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: 0 0 10px 2px white;
+            border-radius: 5px;
+        }
+
+        .box {
+            position: relative;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            color: white;
+            top: 30%;
+            word-spacing: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+
+        }
+
+        .startbutton {
+            position: relative;
+            top: 50%;
+            left: 42%;
+        }
+
+        .button {
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding: 20px 40px;
+            transition: 0.5s;
+        }
+
+        #button-start {
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: var(--clr);
+            letter-spacing: 0.25em;
+            box-shadow: 0 0 30px var(--clr);
+        }
+
+        @media (max-width: 100em) {
+
+            .left {
+                margin-left: 200px;
+            }
+
+        }
+
+        @media (max-width: 90em) {
+
+            .left {
+                margin-left: 100px;
+            }
+
+            @media (max-width: 70em) {
+
+                .left {
+                    margin-left: 0px;
+                }
+
+                .firstbox,
+                .secondbox,
+                .thirdbox,
+                .fourthbox,
+                .fifthbox {
+                    margin-left: 10px;
+                    margin-right: 20px;
+                    font-size: 0.9em;
+
+                }
+
+            }
+
+            @media (max-width: 60em) {
+
+                .content {
+                    height: 300px;
+                }
+
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                .left {
+                    margin-top: 300px;
+                    margin-left: 100px;
+                }
+
+                .image1 {
+                    width: 60%;
+                    margin-right: 500px;
+                    margin-left: 0;
+                }
+
+                .image2 {
+                    margin-top: 50px;
+                    width: 60%;
+                    margin-right: 500px;
+                    margin-left: 0;
+                }
+
+                .image3 {
+                    margin-top: 50px;
+                    width: 60%;
+                    margin-right: 500px;
+                    margin-left: 0;
+                }
+
+                .image4,
+                .image5 {
+                    width: 60%;
+                    margin-top: 75px;
+                    margin-right: 500px;
+                    margin-left: 0;
+                }
+
+                .firstbox {
+                    margin-left: 0;
+                    margin-right: 100px;
+                    font-size: 0.9em;
+                    margin-bottom: 350px;
+                }
+
+                .secondbox {
+                    margin-bottom: 170px;
+                    margin-left: 0;
+                    margin-right: 100px;
+                    font-size: 0.9em;
+                }
+
+                .thirdbox,
+                .fourthbox {
+                    margin-top: 200px;
+                    margin-bottom: 170px;
+                    margin-left: 0;
+                    margin-right: 100px;
+                    font-size: 0.9em;
+                }
+
+                .fifthbox {
+                    margin-top: 400px;
+                    margin-left: 0;
+                    margin-right: 100px;
+                    font-size: 0.9em;
+
+                }
+
+                .right {
+                    left: 30%;
+                    height: 150px;
+                    width: 450px;
+                }
+
+            }
+
+            @media (max-width: 40em) {
+                .right {
+                    left: 10%;
+                }
+
+                .left {
+                    left: 10%;
+                }
+
+                .startbutton {
+                    left: 25%;
+                }
+
+                .footerNav li {
+                    font-size: 1em;
+                    display: grid;
+
+                }
+
+                .footerNav ul {
+                    padding: 0;
+                    display: grid;
+                }
+
+                .box {
+                    font-size: 15px;
+                }
+
+            }
+
+        }
+    </style>
+
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1 ps-5 text-danger">📅HorizonPlan</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav px-5 pt-2">
+                        <li class="nav-item active">
+                            <a href="Website.html" class="nav-link active">
+                                <h4>Home</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav px-5 pt-2">
+                        <li class="nav-item active">
+                            <a href="Guide.html" class="nav-link active">
+                                <h4>Guide</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav px-5 pt-2">
+                        <li class="nav-item active">
+                            <a href="Tool.html" class="nav-link active">
+                                <h4>Tool</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav px-5 pt-2">
+                        <li class="nav-item active">
+                            <a href="Contact.html" class="nav-link active">
+                                <h4>Contact Us</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="content">
+            <div class="container">
+                <h1 class="text">Heres a guide on how to use the tool!</h1>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="left">
+                <img class="image1" src="dates.png">
+                <img class="image2" src="Days.png">
+                <img class="image3" src="Add.png">
+                <img class="image4" src="shown.png">
+                <img class="image5" src="Highlighted.png">
+            </div>
+            <div class="right">
+                <div class="firstbox">
+                    <h3>Get Started</h3>
+                    <p>When you access the tool, first decide which month you have events that you want to plan for. You
+                        can click the arrow left to have the descending months and the arrow right for the ascending
+                        months. Take reference from the photo.</p>
+                </div>
+                <div class="secondbox">
+                    <h3>Select days</h3>
+                    <p>Hover your mouse over any of the days that is highlighted darkblue. The number will increase in
+                        size indicating that your mouse cursor is on it. As you click on the selected day, there will a
+                        shadow box displaying after clicking. Take reference from the photo.</p>
+                </div>
+                <div class="thirdbox">
+                    <h3>Add your plans</h3>
+                    <p>After ensuring there is a shadow box on the selected day, scroll down until u see a button and
+                        the word empty (first time using). Click on the button and a box will pop up with 3 main
+                        features. The name of the task, the start time and the end time. Fill those 3 inputs and press
+                        on the submit button. Take reference from the photo.</p>
+                </div>
+                <div class="fourthbox">
+                    <h3>Summary</h3>
+                    <p>The added task will be shown in the empty box, it will stay there until you delete it. You can
+                        delete it by click on anywhere within the highlighted area and there will be a alert asking if
+                        you want to delete it. Just press yes and the task will be deleted. Take reference from the
+                        photo.</p>
+                </div>
+                <div class="fifthbox">
+                    <h3>Keep track of days</h3>
+                    <p>After adding your tasks, you do not need to worry about forgetting which the day with the tasks
+                        as those day will be highlighted with a darkblue outline. This indicates that you have a task on
+                        that day. This can used as a reminder for the users. Take reference from the photo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Summary">
+            <div class="box">
+                <p>Now that you are familiarised with how the calendar works. Click the button below to get started!</p>
+            </div>
+            <div class="startbutton">
+                <a id="button-start" href="Tool.html" style="--clr:#fff"><span class="button"> START HERE </span></a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerContainer">
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="Website.html">Home</a></li>
+                        <li><a href="Guide.html">Guide</a></li>
+                        <li><a href="Tool.html">Tool</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2023; Designed by <span class="designer">JiWei</span></p>
+            </div>
+        </footer>
+</body>
+
+</html>

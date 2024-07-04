@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Website.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+    <script defer src="validation.js"></script>
+</head>
+
+<body>
+
+    <style>
+        body {
+            height: 1000px;
+            background-color: #17202b;
+
+        }
+
+        /* reset the margin and padding */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        h4 {
+            font-style: Monospace;
+
+        }
+
+
+        body {
+            height: 1000px;
+            overflow-x: hidden;
+        }
+
+        .nav-link :hover {
+            color: #dc143c;
+        }
+
+
+        footer {
+            background-color: #111;
+            margin-top: 300px;
+        }
+
+        .footerContainer {
+            top: 100%;
+            width: 100%;
+            padding: 50px;
+        }
+
+
+        .footerNav {
+            margin-top: 40px;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        .footerNav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footerNav ul li {
+            color: white;
+            margin-top: 40px;
+            margin-right: 40px;
+            margin-left: 40px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        .footerNav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        .footerNav ul li a:hover {
+            opacity: 1;
+        }
+
+        .footerBottom {
+            background-color: black;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .footerBottom p {
+            color: white;
+        }
+
+        .designer {
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+
+
+        .navbar {
+            background-color: #212529 !important;
+        }
+
+        .box {
+            width: 80%;
+            margin-top: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: monospace;
+        }
+
+        .contact {
+            background: white;
+            display: flex;
+            font-family: monospace;
+            border-radius: 10px;
+        }
+
+        .left {
+            flex-basis: 70%;
+            padding: 40px 60px;
+        }
+
+        .right {
+            flex-basis: 30%;
+            padding: 40px;
+            background: linear-gradient(90deg, #17202b, black);
+            color: white;
+            border-radius: 0 10px 10px 0;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .box p {
+            margin-bottom: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        form {
+            background: white;
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            padding-bottom: 30px;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .submit {
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            transition: 0.5s;
+            width: 20%;
+            padding: 5px;
+            margin-top: 50px;
+            margin-left: 40%;
+        }
+
+        .submit:hover {
+            background: white;
+            letter-spacing: 0.25em;
+            box-shadow: 0 0 30px black;
+        }
+
+        p {
+            margin-top: 100px;
+            align-items: center;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 40em) {
+            .left {
+                flex-basis: 10%;
+                padding: 5px;
+            }
+
+            .right {
+                padding: 5px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .submit {
+                width: 50%;
+            }
+
+            .footerNav li {
+                font-size: 1em;
+                display: grid;
+            }
+
+            .footerNav ul {
+                padding: 0;
+                display: grid;
+            }
+        }
+    </style>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1 ps-5 text-danger">📅HorizonPlan</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav px-5 pt-2">
+                        <li class="nav-item active">
+                            <a href="Website.html" class="nav-link active">
+                                <h4>Home</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav px-5 pt-2">
+                        <li class="nav-item active">
+                            <a href="Guide.html" class="nav-link active">
+                                <h4>Guide</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav px-5 pt-2">
+                        <li class="nav-item active">
+                            <a href="Tool.html" class="nav-link active">
+                                <h4>Tool</h4>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav px-5 pt-2">
+                        <li class="nav-item active">
+                            <a href="Contact.html" class="nav-link active">
+                                <h4>Contact Us
+                                </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="box">
+        <h1>Get in touch with us!</h1>
+        <p>We're here to assist! If you're facing any problems or have any inquiries about the
+            tool. <br>Please do not hesitate to email us.
+            We would also like to hear any feedback or suggestion from you too! </p>
+        <div class="contact">
+            <div class="left">
+                <h3>Your opinion matters!</h3>
+                <div id="error"></div>
+                <form id="form">
+                    <label>Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="John Lee" required>
+
+                    <label>Phone Number</label>
+                    <input id="number" name="number" type="number" placeholder="98765432" required>
+
+                    <label>Your Email</label>
+                    <input id="email" name="email" type="email" placeholder="johnlee@gmail.com" required>
+
+                    <label>Inquiries/Feedback:</label>
+                    <textarea class="textarea" rows="4"></textarea>
+
+                    <button type="submit" class="submit">SUBMIT</button>
+                </form>
+            </div>
+            <div class="right">
+                <h3>Reach us</h3>
+                <p>Email: HorizonPlan@gmail.com</p>
+                <p>Service Number: +65 6044 2109</p>
+                <p>Customer Service: Weekdays 9am-5pm / Weekends 11am-7pm</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="Website.html">Home</a></li>
+                    <li><a href="Guide.html">Guide</a></li>
+                    <li><a href="Tool.html">Tool</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023; Designed by <span class="designer">JiWei</span></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
